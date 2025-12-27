@@ -30,7 +30,8 @@
           {
             "group": "Misc",
             "pages": [
-              "misc/permissions"
+              "misc/permissions",
+              "misc/erlc-linking"
             ]
           }
         ]
