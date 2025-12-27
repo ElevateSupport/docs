@@ -1,0 +1,45 @@
+---
+title: "ERLC Integration"
+---
+
+## Linking your server
+
+Run `/setup` and go to the **ERLC Integration** page via the dropdown menu. Once you have navigated to this page, select the dropdown again and go to **API Key** and place your key inside the text box.
+
+<Check>
+  You have successfully linked your ERLC server with Elevate. You can view more information on settings in [setup](https://docs.elevate.nclrp.xyz/misc/setup)
+</Check>
+
+## Sending a command in-game
+
+Run `/erlc command` and inside of the **command** argument, enter the command you wish to send **without** the colon ( : ) infront of it.
+
+e.g: `h Hello!`
+
+## Custom Commands
+
+The custom commands selection is all of the commands in-game using `:log` .
+
+<Tabs>
+  <Tab title="ERLC">
+    <Warning>
+      You need to have the ERLC side setup in order for this to work. Without it, you wont be able to run commands through Elevate in your server.
+    </Warning>
+    1. Join your ERLC private server
+    2. Search for **Commands Log Webhook** and click **Edit**
+    3. Input your Discord webhook link of the channel you want command logs to be sent to
+    4. Click **Save** 
+    5. All done! Move onto the **Discord / Elevate** tab.
+  </Tab>
+  <Tab title="Discord / Elevate">
+    <Warning>
+      Make sure you have setup the **ERLC** tab first.
+    </Warning>
+    1. Run `/setup` again and navigate to the **ERLC Integration** tab
+    2. Click the dropdown and select **Enable Custom Commands**
+    3. Select the dropdown again and select **Set Channels**
+    4. Set the **correct** channel for your Command Logs. Make sure it is the same as what the channel the webhook is in
+    5. Click **Save & Back**
+    6. All done! Now run `:log test` in your in-game server and you should get a private message from Remote Server Management saying "Test successful!"
+  </Tab>
+</Tabs>
